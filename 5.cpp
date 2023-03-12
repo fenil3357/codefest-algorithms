@@ -26,7 +26,7 @@ int main() {
 		int rem = N - 5;
 		ans += maxProfits[4] * min(rem, single_max_tree);
 		rem -= min(rem, single_max_tree);
-		single_max_tree--;
+		// single_max_tree--;
 		maxProfits.pop_back();
 		reverse(maxProfits.begin(), maxProfits.end());
 		for (int i = 0; i < 3; i++) {
